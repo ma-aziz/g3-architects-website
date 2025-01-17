@@ -11,6 +11,15 @@
   .display-flex{
     display: flex;
   }
+  .btn-primary{
+    background-color: #FF900E;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px 25px;
+    border: none;
+  }
 
   /* header styles */
 
@@ -18,6 +27,7 @@
   /* navbar styles */
   .navbar{
     justify-content: space-between;
+    align-items: center;
   }
   .nav-item{
     list-style: none;
@@ -34,6 +44,10 @@
     max-width: 1440px; 
     margin: 0 auto;
   }
+  .brand{
+    font-weight: 700;
+    font-size: 2.8rem;
+  }
   /* dark 02 */
   .text-gray{
     color: #424242;
@@ -44,4 +58,26 @@
   }
   .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
+  }
+  /* banner related styles */
+  .banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #131313;
+  }
+  .banner-image{
+    width: 100%;
+  }
+
+  /* responsive media query */
+  @media screen and (max-width:576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
   }
